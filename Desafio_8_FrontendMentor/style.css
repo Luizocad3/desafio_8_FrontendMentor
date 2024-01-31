@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    max-width: 891px;
+    
+    padding-top: 80px;
+
+    display: grid;
+    grid-auto-flow: column;
+
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    border-radius: 80px;
+}
+
+.container {
+    padding: 40px 40px;
+    text-align: left;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+
+    padding: 30px 0px;
+}
+
+p {
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+
+    line-height: 30px;
+}
+
+.container#sedan{
+    background: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 10px; 
+    border-top-left-radius: 10px;   
+}
+.container#suvs{
+    background: hsl(184, 100%, 22%);   
+}
+.container#luxury{
+    background: hsl(179, 100%, 13%); 
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+#sedan a {
+    padding: 16px 30px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    background: white;
+
+    border-radius: 30px;
+    border: black;
+    color: hsl(31, 77%, 52%);
+}
+
+#suvs a {
+    padding: 16px 30px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    background: white;
+
+    border-radius: 30px;
+    border: black;
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury a {
+    padding: 16px 30px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    background: white;
+
+    border-radius: 30px;
+    border: black;
+    color: hsl(179, 100%, 13%);
+}
+
+#sedan a:hover {
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+
+#suvs a:hover {
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+
+#luxury a:hover {
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+
+.button {
+    margin-top: 80px;
+}
+
+@media (max-width: 700px) {
+    main {
+        max-width: 600px;
+        min-width: 275px;
+        display: flex;
+        flex-direction: column;
+
+        padding: 30px;
+    }
+
+    .container#sedan { 
+        border-radius: 0px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+       
+    }
+
+    .container#luxury{
+        border-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px
+    }
+}
